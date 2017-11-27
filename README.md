@@ -74,9 +74,13 @@ You can now create Jupyter notebooks which have live access to a Google bucket!
 
 ### Stop and delete container
 
+```bash
 docker stop jugs
 docker rm -vf jugs
+```
 
 ### Delete image
 
+```bash
 docker rmi -f jugs
+```
