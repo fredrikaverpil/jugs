@@ -1,6 +1,9 @@
 # jugs
 
-Jupyter Notebook with Google Compute Storage access.
+This is a Docker container which runs `gcsfuse` and `jupyter-notebook`, which allows to make notebooks on live Google bucket data sets.
+
+- See the [`Dockerfile`](Dockerfile) for details on Python setup
+- Requires JSON key credentials from Google for bucket access (uses `gcloud` for auth)
 
 
 ## Instructions
