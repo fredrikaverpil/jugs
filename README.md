@@ -66,11 +66,10 @@ If folders are missing, use the `--implicit-dirs` option (slow!), read more on t
 
 Notes:
 
-* use `localhost` in place of the IP address in the URL
-* use this option to avoid using the token: `--NotebookApp.token=''`
+- Access Jupyter: `http://localhost:8888`
+- Use this option to avoid using the token: `--NotebookApp.token=''`
 
-
-You can now create Jupyter notebooks which have access to a Google bucket!
+You can now create Jupyter notebooks which have live access to a Google bucket!
 
 
 ### Stop and delete container
