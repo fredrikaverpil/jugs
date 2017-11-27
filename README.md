@@ -3,6 +3,8 @@
 Jupyter Notebook with Google Compute Storage access.
 
 
+## Instructions
+
 ### Clone repo
 
 ```bash
@@ -22,7 +24,7 @@ docker build -t fredrikaverpil/jugs .
 
 ### Run container
 
-**Linux**`
+**Linux**
 ```bash
 docker run --rm --detach --privileged --name="jugs" --hostname jugs -p 8888:8888 --volume $(pwd):/jugs fredrikaverpil/jugs
 ```
@@ -50,8 +52,7 @@ mkdir -p /bucket
 gcsfuse -o ro --key-file=/jugs/key.json my-bucket /bucket  # read only access
 ```
 
-Note:
-  - if folders are missing, use the `--implicit-dirs` option (slow!)
+If folders are missing, use the `--implicit-dirs` option (slow!), read more on that [here](https://github.com/GoogleCloudPlatform/gcsfuse/blob/master/docs/semantics.md#implicit-directories).
 
 
 ### Start Jupyter Notebook
