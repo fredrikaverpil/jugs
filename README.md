@@ -1,4 +1,4 @@
-# jugs
+# jugs :sake:
 
 This is a Docker container which runs `gcsfuse` and `jupyter-notebook`, which allows to make notebooks on live Google bucket data sets.
 
@@ -69,7 +69,7 @@ Notes:
 - Access Jupyter: `http://localhost:8888`
 - Use this option to avoid using the token: `--NotebookApp.token=''`
 
-You can now create Jupyter notebooks which have live access to a Google bucket!
+You can now create Jupyter notebooks which have live access to a Google bucket. Save the notebooks in `/jugs` so that you can access them later...
 
 
 ### Stop and delete container
